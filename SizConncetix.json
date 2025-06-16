@@ -1,0 +1,1317 @@
+// Copyright (c) 2025 SizConncetix
+// All rights reserved.  
+// This configuration file is for personal use only. Redistribution, modification, or commercial use is prohibited without explicit permission  
+
+//subscription-userinfo: upload=0; download=0; total=9000000000000; expire=0  
+//profile-update-interval: 6  
+//support-url: https://t.me/SIZVPN_app  
+//profile-web-page-url: https://t.me/SIZVPN_app  
+
+{
+    "log": {
+      "level": "panic",
+      "timestamp": true
+    },
+    "dns": {
+      "servers": [
+        {
+          "tag": "dns_proxy",
+          "address": "https://1.1.1.1/dns-query",
+          "address_resolver": "dns_direct",
+          "strategy": "prefer_ipv4",
+          "detour": "❇️ SizConncetix-FreeSingConfig"
+        },
+        {
+          "tag": "dns_direct",
+          "address": "local",
+          "strategy": "prefer_ipv4",
+          "detour": "❇️ SizConncetix-FreeSingConfig"
+        },
+        {
+          "tag": "dns_block",
+          "address": "rcode://success"
+        }
+      ],
+      "rules": [
+        {
+          "outbound": "any",
+          "server": "dns_direct"
+        }
+
+
+      ],
+      "final": "dns_proxy",
+      "independent_cache": true
+    },
+    "ntp": {
+      "enabled": true,
+      "server": "ir.pool.ntp.org",
+      "server_port": 123,
+      "detour": "direct"
+    },
+    "inbounds": [
+      {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "http",
+      "listen": "127.0.0.1",
+      "listen_port": 8181,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "socks",
+      "listen": "127.0.0.1",
+      "listen_port": 8080,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "tun",
+     "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 20122
+        }
+      },
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only"
+    }
+
+    ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "❇️ SizConncetix-FreeSingConfig",
+      "outbounds": [
+        "✨SizConncetix✨",
+"❇️ SizConncetix 🇪🇬",
+"❇️ SizConncetix 🇧🇲",
+"❇️ SizConncetix 🇵🇭",
+"❇️ SizConncetix 🇵🇦",
+"❇️ SizConncetix 🇦🇷",
+"❇️ SizConncetix 🇫🇮",
+"❇️ SizConncetix 🇷🇴",
+"❇️ SizConncetix 🇫🇷",
+"❇️ SizConncetix 🇸🇪",
+"❇️ SizConncetix 🇦🇪",
+"❇️ SizConncetix 🇩🇿",
+"❇️ SizConncetix 🇦🇹",
+"❇️ SizConncetix 🇦🇺",
+"❇️ SizConncetix 🇧🇪",
+"❇️ SizConncetix 🇧🇬",
+"❇️ SizConncetix 🇧🇷",
+"❇️ SizConncetix 🇨🇦",
+"❇️ SizConncetix 🇨🇭",
+"❇️ SizConncetix 🇨🇱",
+"❇️ SizConncetix 🇲🇩",
+"❇️ SizConncetix 🇨🇾",
+"❇️ SizConncetix 🇨🇿",
+"❇️ SizConncetix 🇩🇪",
+"❇️ SizConncetix 🇩🇰",
+"❇️ SizConncetix 🇺🇸",
+"❇️ SizConncetix 🇪🇪",
+"❇️ SizConncetix 🇪🇸",
+"❇️ SizConncetix 🇱🇺",
+"❇️ SizConncetix 🇹🇷",
+"❇️ SizConncetix 🇬🇪",
+"❇️ SizConncetix 🇬🇷",
+"❇️ SizConncetix 🇭🇰",
+"❇️ SizConncetix 🇭🇺",
+"❇️ SizConncetix 🇸🇬",
+"❇️ SizConncetix 🇬🇧",
+"❇️ SizConncetix 🇮🇹",
+"❇️ SizConncetix 🇯🇵",
+"❇️ SizConncetix 🇱🇹",
+"❇️ SizConncetix 🇳🇱",
+"❇️ SizConncetix 🇹🇩",
+"❇️ SizConncetix 🇧🇭",
+"❇️ SizConncetix 🇷🇺",
+"❇️ SizConncetix 🇵🇹",
+"❇️ SizConncetix 🇦🇶"
+
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "✨SizConncetix✨",
+      "outbounds": [
+"❇️ SizConncetix 🇪🇬",
+"❇️ SizConncetix 🇧🇲",
+"❇️ SizConncetix 🇵🇭",
+"❇️ SizConncetix 🇵🇦",
+"❇️ SizConncetix 🇦🇷",
+"❇️ SizConncetix 🇫🇮",
+"❇️ SizConncetix 🇷🇴",
+"❇️ SizConncetix 🇫🇷",
+"❇️ SizConncetix 🇸🇪",
+"❇️ SizConncetix 🇦🇪",
+"❇️ SizConncetix 🇩🇿",
+"❇️ SizConncetix 🇦🇹",
+"❇️ SizConncetix 🇦🇺",
+"❇️ SizConncetix 🇧🇪",
+"❇️ SizConncetix 🇧🇬",
+"❇️ SizConncetix 🇧🇷",
+"❇️ SizConncetix 🇨🇦",
+"❇️ SizConncetix 🇨🇭",
+"❇️ SizConncetix 🇨🇱",
+"❇️ SizConncetix 🇲🇩",
+"❇️ SizConncetix 🇨🇾",
+"❇️ SizConncetix 🇨🇿",
+"❇️ SizConncetix 🇩🇪",
+"❇️ SizConncetix 🇩🇰",
+"❇️ SizConncetix 🇺🇸",
+"❇️ SizConncetix 🇪🇪",
+"❇️ SizConncetix 🇪🇸",
+"❇️ SizConncetix 🇱🇺",
+"❇️ SizConncetix 🇹🇷",
+"❇️ SizConncetix 🇬🇪",
+"❇️ SizConncetix 🇬🇷",
+"❇️ SizConncetix 🇭🇰",
+"❇️ SizConncetix 🇭🇺",
+"❇️ SizConncetix 🇸🇬",
+"❇️ SizConncetix 🇬🇧",
+"❇️ SizConncetix 🇮🇹",
+"❇️ SizConncetix 🇯🇵",
+"❇️ SizConncetix 🇱🇹",
+"❇️ SizConncetix 🇳🇱",
+"❇️ SizConncetix 🇹🇩",
+"❇️ SizConncetix 🇧🇭",
+"❇️ SizConncetix 🇷🇺",
+"❇️ SizConncetix 🇵🇹",
+"❇️ SizConncetix 🇦🇶"
+
+      ],
+      "url": "http://whoer.net",
+      "interval": "9m0s",
+      "tolerance": 1,
+      "idle_timeout": "9m0s"
+    },
+{
+  "headers":{
+    "Host":[
+      "stream.meet.google.com"
+    ]
+  },
+  "password": "ioqn613v",
+  "path": "",
+  "server": "prox-eg.pointtoserver.com",
+  "server_port": 10799,
+  "domain_strategy": "",
+  "tag": "❇️ SizConncetix 🇪🇬",
+  "tls": {
+    "alpn": ["h2,http/1.1"],
+    "disable_sni": false,
+    "enabled": false,
+    "server_name": "discord.gg"
+  },
+  "type": "http",
+  "username": "purevpn0s12300644"
+},
+{
+  "headers":{
+    "Host":[
+      "stream.meet.google.com"
+    ]
+  },
+  "password": "ioqn613v",
+  "path": "",
+  "server": "prox-bm.pointtoserver.com",
+  "server_port": 10799,
+  "domain_strategy": "",
+  "tag": "❇️ SizConncetix 🇧🇲",
+  "tls": {
+    "alpn": ["h2,http/1.1"],
+    "disable_sni": false,
+    "enabled": false,
+    "server_name": "discord.gg"
+  },
+  "type": "http",
+  "username": "purevpn0s12300644"
+},
+
+{
+  "headers":{
+    "Host":[
+      "stream.meet.google.com"
+    ]
+  },
+  "password": "ioqn613v",
+  "path": "",
+  "server": "prox-ph.pointtoserver.com",
+  "server_port": 10799,
+  "domain_strategy": "",
+  "tag": "❇️ SizConncetix 🇵🇭",
+  "tls": {
+    "alpn": ["h2,http/1.1"],
+    "disable_sni": false,
+    "enabled": false,
+    "server_name": "discord.gg"
+  },
+  "type": "http",
+  "username": "purevpn0s12300644"
+},
+{
+  "headers":{
+    "Host":[
+      "stream.meet.google.com"
+    ]
+  },
+  "password": "ioqn613v",
+  "path": "",
+  "server": "prox-pa.pointtoserver.com",
+  "server_port": 10799,
+  "domain_strategy": "",
+  "tag": "❇️ SizConncetix 🇵🇦",
+  "tls": {
+    "alpn": ["h2,http/1.1"],
+    "disable_sni": false,
+    "enabled": false,
+    "server_name": "discord.gg"
+  },
+  "type": "http",
+  "username": "purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+    "password": "ioqn613v",
+    "path": "",
+    "server": "prox-tr.pointtoserver.com",
+    "server_port": 10799,
+    "domain_strategy": "",
+    "tag": "❇️ SizConncetix 🇦🇷",
+    "tls": {
+      "alpn": ["h2,http/1.1"],
+      "disable_sni": false,
+      "enabled": false,
+      "server_name": "discord.gg"
+    },
+    "type": "http",
+    "username": "purevpn0s12300644"
+  },
+  {
+    "headers": {
+      "Host": ["stream.meet.google.com"]
+    },
+    "password": "ioqn613v",
+    "path": "",
+    "server": "prox-fi.pointtoserver.com",
+    "server_port": 10799,
+    "domain_strategy": "",
+    "tag": "❇️ SizConncetix 🇫🇮",
+    "tls": {
+      "alpn": ["h2,http/1.1"],
+      "disable_sni": false,
+      "enabled": false,
+      "server_name": "discord.gg"
+    },
+    "type": "http",
+    "username": "purevpn0s12300644"
+  },
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+    "password": "ioqn613v",
+    "path": "",
+    "server": "prox-ro.pointtoserver.com",
+    "server_port": 10799,
+    "domain_strategy": "",
+    "tag": "❇️ SizConncetix 🇷🇴",
+    "tls": {
+      "alpn": ["h2,http/1.1"],
+      "disable_sni": false,
+      "enabled": false,
+      "server_name": "discord.gg"
+    },
+    "type": "http",
+    "username": "purevpn0s12300644"
+  },
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+    "password": "ioqn613v",
+    "path": "",
+    "server": "prox-es.pointtoserver.com",
+    "server_port": 10799,
+    "domain_strategy": "",
+    "tag": "❇️ SizConncetix 🇫🇷",
+    "tls": {
+      "alpn": ["h2,http/1.1"],
+      "disable_sni": false,
+      "enabled": false,
+      "server_name": "discord.gg"
+    },
+    "type": "http",
+    "username": "purevpn0s12300644"
+  },
+
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+    "password": "ioqn613v",
+    "path": "",
+    "server": "prox-se.pointtoserver.com",
+    "server_port": 10799,
+    "domain_strategy": "",
+    "tag": "❇️ SizConncetix 🇸🇪",
+    "tls": {
+      "alpn": ["h2,http/1.1"],
+      "disable_sni": false,
+      "enabled": false,
+      "server_name": "discord.gg"
+    },
+    "type": "http",
+    "username": "purevpn0s12300644"
+  },
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ae.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇦🇪",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-al.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇩🇿",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-at.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇦🇹",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-au.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇦🇺",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-in.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇧🇪",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bg.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇧🇬",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-br.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇧🇷",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ca.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇨🇦",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-mc.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇨🇭",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-pr.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇨🇱",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bo.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇲🇩",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-pr.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇨🇾",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-cz.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇨🇿",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-cl.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇩🇪",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-om.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇩🇰",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bb.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇺🇸",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ee.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇪🇪",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-es.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇪🇸",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-vn.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇱🇺",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-tr.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇹🇷",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-af.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇬🇪",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-gr.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇬🇷",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ro.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇭🇰",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-hu.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇭🇺",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bh.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇸🇬",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bd.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇬🇧",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-lt.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇮🇹",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bo.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇯🇵",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bs.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇱🇹",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ie.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇳🇱",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-rs.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇹🇩",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ky.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇧🇭",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-bn.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇷🇺",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-ar.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇵🇹",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+
+{
+"headers":{
+"Host":[
+"stream.meet.google.com"
+]
+},
+"password":"ioqn613v",
+"path":"",
+"server":"prox-jp.pointtoserver.com",
+"server_port":10799,
+"domain_strategy":"",
+"tag":"❇️ SizConncetix 🇦🇶",
+"tls":{
+"alpn":[
+"h2,http/1.1"
+],
+"disable_sni":false,
+"enabled":false,
+"server_name":"discord.gg"
+},
+"type":"http",
+"username":"purevpn0s12300644"
+},
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "inbound": "dns-in"
+          },
+          {
+            "port": 53
+          },
+          {
+            "protocol": "dns"
+          }
+        ],
+        "action": "hijack-dns"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "network": "tcp",
+        "port": 853,
+        "action": "reject",
+        "method": "default"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "action": "reject",
+        "method": "default"
+      },
+      {
+        "inbound": "tun-in",
+        "action": "resolve"
+      },
+      {
+        "ip_cidr": "10.10.34.0/24",
+        "outbound": "❇️ SizConncetix-FreeSingConfig"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
+      {
+        "domain_regex": [
+          ".*\\.ir$",
+          ".*\\.xn--mgba3a4f16a$"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "protocol": "stun",
+        "action": "reject",
+        "method": "default"
+      },
+      {
+        "source_ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "ip_cidr": [
+          "224.0.0.0/3",
+          "ff00::/8"
+        ],
+        "action": "reject",
+        "method": "default"
+      }
+    ],
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db",
+      "cache_id": "sinavm",
+      "store_fakeip": true
+    },
+    "clash_api": {
+        "default_mode": "✨SizConncetix✨",
+      "external_controller": "127.0.0.1:9090",
+      "access_control_allow_origin": "https://yacd.metacubex.one",
+      "access_control_allow_private_network": true
+    }
+  }
+}
