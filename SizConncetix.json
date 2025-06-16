@@ -419,21 +419,18 @@
         "update_interval": "72h0m0s"
       }
     ],
+    "final": "@𝑺𝒊𝑵𝑨𝐕𝐌👈🏻تلگرام",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
-  "experimental": 
+  "experimental": {
     "cache_file": {
       "enabled": true,
       "path": "cache.db",
-      "cache_id": "SizConncetix",
-	  "store_fakeip": true
+      "store_fakeip": true
     },
     "clash_api": {
-	  "default_mode": "✨SizConncetix✨",
-      "external_controller": "127.0.0.1:9090",
-      "access_control_allow_origin": "http://yacd.haishan.me",
-      "access_control_allow_private_network": true
+      "default_mode": "@𝕊𝕚ℕ𝔸𝕍𝕄"
     }
-  
+  }
 }
