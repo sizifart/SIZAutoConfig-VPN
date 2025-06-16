@@ -1,12 +1,3 @@
-// Copyright (c) 2025 SizConncetix
-// All rights reserved.  
-// This configuration file is for personal use only. Redistribution, modification, or commercial use is prohibited without explicit permission  
-
-//subscription-userinfo: upload=0; download=0; total=9000000000000; expire=0  
-//profile-update-interval: 6  
-//support-url: https://t.me/SIZVPN_app  
-//profile-web-page-url: https://t.me/SIZVPN_app  
-
 {
   "log": {
     "disabled": true,
@@ -323,7 +314,7 @@
         "ip_is_private": true,
         "outbound": "direct"
       },
-     {
+      {
         "rule_set": [
           "geosite-malware",
           "geosite-phishing",
@@ -350,6 +341,14 @@
           "www.google.com",
           "apps.apple.com",
           "itunes.apple.com"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          ".ir",
+          ".xn--mgba3a4fra",
+          ".xn--mgba3a4f16a"
         ],
         "outbound": "direct"
       }
@@ -420,16 +419,6 @@
         "update_interval": "72h0m0s"
       }
     ],
-      {
-        "domain_suffix": [
-          ".ir",
-          ".xn--mgba3a4fra",
-          ".xn--mgba3a4f16a"
-        ],
-        "outbound": "direct"
-      }
-    ],
-     {
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
@@ -438,11 +427,11 @@
       "enabled": true,
       "path": "cache.db",
       "cache_id": "SizConncetix",
-	  "store_fakeip": true
+      "store_fakeip": true
     },
     "clash_api": {
-	  "default_mode": "✨SizConncetix✨",
       "external_controller": "127.0.0.1:9090",
+      "store_selected": true,
       "access_control_allow_origin": "http://yacd.haishan.me",
       "access_control_allow_private_network": true
     }
