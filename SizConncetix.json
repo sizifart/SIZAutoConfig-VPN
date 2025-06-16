@@ -422,12 +422,12 @@
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
-  "experimental": {
+    "experimental": {
     "cache_file": {
       "enabled": true,
       "path": "cache.db",
       "cache_id": "SizConncetix",
-      "store_fakeip": true
+	  "store_fakeip": true
     },
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
