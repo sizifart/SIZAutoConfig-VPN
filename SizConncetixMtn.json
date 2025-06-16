@@ -587,7 +587,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "❇️ SizConncetix"
+        "outbound": "SizConncetix"
       },
       {
         "clash_mode": "Direct",
@@ -613,7 +613,7 @@
       
       {
         "ip_cidr": "10.10.34.0/24",
-        "outbound": "❇️ SizConncetix"
+        "outbound": "SizConncetix"
       },
       {
         "ip_is_private": true,
@@ -623,7 +623,7 @@
     "rule_set": [
       
     ],
-    "final": "❇️ SizConncetix",
+    "final": "SizConncetix",
     "auto_detect_interface": true
   },
   "experimental": {
