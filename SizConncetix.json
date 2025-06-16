@@ -422,7 +422,7 @@
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
-  "experimental": {
+  "experimental": 
     "cache_file": {
       "enabled": true,
       "path": "cache.db",
@@ -435,5 +435,5 @@
       "access_control_allow_origin": "http://yacd.haishan.me",
       "access_control_allow_private_network": true
     }
-  }
+  
 }
