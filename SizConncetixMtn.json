@@ -103,7 +103,7 @@
   "outbounds": [
 {
         "type": "selector",
-        "tag": "منصوره سگوند مهسا موگویی",
+        "tag": "❕SizSelection 1",
         "outbounds": [
           "SizConncetix",
           "SizConncetix"
@@ -116,7 +116,7 @@
 
    {
         "type": "selector",
-        "tag": "نیکا شاکرمی مهسا امینی",
+        "tag": "❕SizSelection 2",
         "outbounds": [
           "SizConncetix",
           "SizConncetix"
@@ -133,17 +133,17 @@
            
             "outbounds": [
                 "SizConncetix",
-                "🇨🇦 T.ME/wearestand",
-                "🇨🇾 T.ME/iranramona",
-                "🇬🇪 T.ME/wearestand",
-                "🇧🇴 T.ME/iranramona",
-                "🇭🇳 T.ME/wearestand",
-                "🇩🇪 T.ME/wearestand",
-                "🇮🇹 T.ME/wearestand",
-                "🇩🇰 T.ME/iranramona",
-                "🇺🇸 T.ME/wearestand",
-                "🇫🇷 T.ME/iranramona",
-                "🇪🇪 T.ME/wearestand"
+                "🇨🇦 - SizConncetix ❇️",
+                "🇨🇾 - SizConncetix ❇️",
+                "🇬🇪 - SizConncetix ❇️",
+                "🇧🇴 - SizConncetix ❇️",
+                "🇭🇳 - SizConncetix ❇️",
+                "🇩🇪 - SizConncetix ❇️",
+                "🇮🇹 - SizConncetix ❇️",
+                "🇩🇰 - SizConncetix ❇️",
+                "🇺🇸 - SizConncetix ❇️",
+                "🇫🇷 - SizConncetix ❇️",
+                "🇪🇪 - SizConncetix ❇️"
              
             ]
         },
@@ -171,7 +171,7 @@
         },
 
 {
-            "tag": "🇨🇦 T.ME/wearestand",
+            "tag": "🇨🇦 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                "🇨🇦CANADA"
@@ -180,7 +180,7 @@
             ]
         },
 {
-            "tag": "🇨🇾 T.ME/iranramona",
+            "tag": "🇨🇾 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                "🇨🇾CYPRUS"
@@ -190,7 +190,7 @@
         },
 
 {
-            "tag": "🇬🇪 T.ME/wearestand",
+            "tag": "🇬🇪 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇬🇪GEORGIA"
@@ -200,7 +200,7 @@
             ]
         },
 {
-            "tag": "🇧🇴 T.ME/iranramona",
+            "tag": "🇧🇴 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇧🇴BOLIVIA"
@@ -209,7 +209,7 @@
             ]
         },
 {
-            "tag": "🇭🇳 T.ME/wearestand",
+            "tag": "🇭🇳 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇭🇳HONDURAS"
@@ -219,7 +219,7 @@
         },
 
 {
-            "tag": "🇩🇪 T.ME/wearestand",
+            "tag": "🇩🇪 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇩🇪GERMANY"
@@ -231,7 +231,7 @@
 
 
 {
-            "tag": "🇮🇹 T.ME/wearestand",
+            "tag": "🇮🇹 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇮🇹ITALY"
@@ -240,7 +240,7 @@
             ]
         },
 {
-            "tag": "🇩🇰 T.ME/iranramona",
+            "tag": "🇩🇰 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇩🇰DENMARK"
@@ -251,7 +251,7 @@
 
 
 {
-            "tag": "🇺🇸 T.ME/wearestand",
+            "tag": "🇺🇸 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇺🇸UNITED STATES"
@@ -261,7 +261,7 @@
             ]
         },
 {
-            "tag": "🇫🇷 T.ME/iranramona",
+            "tag": "🇫🇷 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇫🇷FRANCE"
@@ -271,7 +271,7 @@
         },
 
 {
-            "tag": "🇪🇪 T.ME/wearestand",
+            "tag": "🇪🇪 - SizConncetix ❇️",
             "type": "urltest",
             "outbounds": [
                 "🇪🇪ESTONIA"
