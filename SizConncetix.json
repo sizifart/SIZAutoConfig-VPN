@@ -419,7 +419,7 @@
         "update_interval": "72h0m0s"
       }
     ],
-    "final": "@𝑺𝒊𝑵𝑨𝐕𝐌👈🏻تلگرام",
+    "final": "✨SizConncetix✨",
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
@@ -430,7 +430,7 @@
       "store_fakeip": true
     },
     "clash_api": {
-      "default_mode": "@𝕊𝕚ℕ𝔸𝕍𝕄"
+      "default_mode": "✨SizConncetix✨"
     }
   }
 }
