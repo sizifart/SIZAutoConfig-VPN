@@ -429,6 +429,7 @@
         "outbound": "direct"
       }
     ],
+     {
     "auto_detect_interface": true,
     "override_android_vpn": true
   },
