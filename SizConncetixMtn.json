@@ -1,3 +1,12 @@
+// Copyright (c) 2025 SizConncetix
+// All rights reserved.  
+// This configuration file is for personal use only. Redistribution, modification, or commercial use is prohibited without explicit permission  
+
+//subscription-userinfo: upload=0; download=0; total=9000000000000; expire=0  
+//profile-update-interval: 6  
+//support-url: https://t.me/SIZVPN_app  
+//profile-web-page-url: https://t.me/SIZVPN_app  
+
 {
   "log": {
     "level": "warn",
@@ -8,7 +17,7 @@
         {
         "tag": "default",
         "address": "tls://8.8.8.8",
-        "detour": "رضا شاه روحت شاد"
+        "detour": "SizConncetix"
       },
       {
         "tag": "local",
@@ -118,7 +127,7 @@
         "interrupt_exist_connections": true
       },
  {
-            "tag": "رضا شاه روحت شاد",
+            "tag": "SizConncetix",
             "type": "selector",
             "interrupt_exist_connections": true,
            
@@ -578,7 +587,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "رضا شاه روحت شاد"
+        "outbound": "SizConncetix"
       },
       {
         "clash_mode": "Direct",
@@ -604,7 +613,7 @@
       
       {
         "ip_cidr": "10.10.34.0/24",
-        "outbound": "رضا شاه روحت شاد"
+        "outbound": "SizConncetix"
       },
       {
         "ip_is_private": true,
@@ -614,7 +623,7 @@
     "rule_set": [
       
     ],
-    "final": "رضا شاه روحت شاد",
+    "final": "SizConncetix",
     "auto_detect_interface": true
   },
   "experimental": {
