@@ -1,0 +1,634 @@
+// Copyright (c) 2025 SizConncetix
+// All rights reserved.  
+// This configuration file is for personal use only. Redistribution, modification, or commercial use is prohibited without explicit permission  
+
+//subscription-userinfo: upload=0; download=0; total=9000000000000; expire=0  
+//profile-update-interval: 6  
+//support-url: https://t.me/SIZVPN_app  
+//profile-web-page-url: https://t.me/SIZVPN_app  
+
+{
+  "log": {
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+        {
+        "tag": "default",
+        "address": "tls://8.8.8.8",
+        "detour": "✨SizConncetix✨"
+      },
+      {
+        "tag": "local",
+        "address": "https://1.1.1.1/dns-query",
+        "detour": "✨SizConncetix✨"
+      }
+    
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "local"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "default"
+      },
+      {
+        "clash_mode": "Direct",
+        "server": "local"
+      }
+    
+    ],
+    "final": "default",
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 20122,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "http",
+      "listen": "127.0.0.1",
+      "listen_port": 8181,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "socks",
+      "listen": "127.0.0.1",
+      "listen_port": 8080,
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only",
+      "tcp_fast_open": false,
+      "tcp_multi_path": false,
+      "udp_fragment": true
+    },
+    {
+      "type": "tun",
+     "address": [
+        "172.19.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": false,
+      "stack": "mixed",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 20122
+        }
+      },
+      "sniff": true,
+      "sniff_override_destination": true,
+      "domain_strategy": "ipv4_only"
+    }
+  ],
+  "outbounds": [
+{
+        "type": "selector",
+        "tag": "❕SizSelection 1",
+        "outbounds": [
+          "SizConncetix",
+          "SizConncetix"
+        
+        
+        ],
+        "default": "SizConncetix",
+        "interrupt_exist_connections": true
+      },
+
+   {
+        "type": "selector",
+        "tag": "❕SizSelection 2",
+        "outbounds": [
+          "SizConncetix",
+          "SizConncetix"
+        
+        
+        ],
+        "default": "SizConncetix",
+        "interrupt_exist_connections": true
+      },
+ {
+            "tag": "❕SizSelection 3",
+            "type": "selector",
+            "interrupt_exist_connections": true,
+           
+            "outbounds": [
+                "SizConncetix",
+                "🇨🇦 - SizConncetix ❇️",
+                "🇨🇾 - SizConncetix ❇️",
+                "🇬🇪 - SizConncetix ❇️",
+                "🇧🇴 - SizConncetix ❇️",
+                "🇭🇳 - SizConncetix ❇️",
+                "🇩🇪 - SizConncetix ❇️",
+                "🇮🇹 - SizConncetix ❇️",
+                "🇩🇰 - SizConncetix ❇️",
+                "🇺🇸 - SizConncetix ❇️",
+                "🇫🇷 - SizConncetix ❇️",
+                "🇪🇪 - SizConncetix ❇️"
+             
+            ]
+        },
+
+        {
+            "tag": "❕SizSelection 4",
+            "type": "urltest",
+            "url": "http://cp.cloudflare.com",
+            "interval": "10m0s",
+            "outbounds": [
+                "🇨🇦CANADA",
+                "🇨🇾CYPRUS",
+                "🇬🇪GEORGIA",
+                "🇧🇴BOLIVIA",
+                "🇭🇳HONDURAS",
+                "🇩🇪GERMANY",
+                "🇮🇹ITALY",
+                "🇩🇰DENMARK",
+                "🇺🇸UNITED STATES",
+                "🇫🇷FRANCE",
+                "🇪🇪ESTONIA"
+                
+  
+            ]
+        },
+
+{
+            "tag": "🇨🇦 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+               "🇨🇦CANADA"
+
+
+            ]
+        },
+{
+            "tag": "🇨🇾 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+               "🇨🇾CYPRUS"
+
+
+            ]
+        },
+
+{
+            "tag": "🇬🇪 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇬🇪GEORGIA"
+
+
+
+            ]
+        },
+{
+            "tag": "🇧🇴 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇧🇴BOLIVIA"
+
+
+            ]
+        },
+{
+            "tag": "🇭🇳 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇭🇳HONDURAS"
+ 
+
+            ]
+        },
+
+{
+            "tag": "🇩🇪 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇩🇪GERMANY"
+           
+
+
+            ]
+        },
+
+
+{
+            "tag": "🇮🇹 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇮🇹ITALY"
+
+
+            ]
+        },
+{
+            "tag": "🇩🇰 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇩🇰DENMARK"
+
+
+            ]
+        },
+
+
+{
+            "tag": "🇺🇸 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇺🇸UNITED STATES"
+                
+
+
+            ]
+        },
+{
+            "tag": "🇫🇷 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇫🇷FRANCE"
+
+
+            ]
+        },
+
+{
+            "tag": "🇪🇪 - SizConncetix ❇️",
+            "type": "urltest",
+            "outbounds": [
+                "🇪🇪ESTONIA"
+                
+
+
+            ]
+        },
+
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "66.111.61.161",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇨🇦CANADA",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "[::ffff:c32f:c211]",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇨🇾CYPRUS",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+
+
+       
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "81.17.123.114",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇬🇪GEORGIA",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "[::ffff:2d86:bd03]",
+            "server_port": 90,
+            "domain_strategy": "",
+            "tag": "🇧🇴BOLIVIA",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+               "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+        
+
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "193.9.32.3",
+            "server_port": 90,
+            "domain_strategy": "",
+            "tag": "🇭🇳HONDURAS",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+        
+       
+
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "194.233.96.24",
+            "server_port": 90,
+            "domain_strategy": "",
+            "tag": "🇩🇪GERMANY",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+
+        
+        
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "85.190.232.156",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇮🇹ITALY",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+        {
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "85.190.238.27",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇩🇰DENMARK",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+        
+
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "[::ffff:426f:3de9]",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇺🇸UNITED STATES",
+             "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+
+
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "185.81.125.67",
+            "server_port": 89,
+            "domain_strategy": "",
+            "tag": "🇫🇷FRANCE",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+    
+
+{
+            "headers": {
+                "Host": [
+                    "stream.meet.google.com"
+                ]
+            },
+            "password": "mvgojzp3aSXrWgD9AfyeLWMN",
+            "path": "",
+            "server": "85.190.239.114",
+            "server_port": 90,
+            "domain_strategy": "",
+            "tag": "🇪🇪ESTONIA",
+            "tls": {
+                "alpn": [
+                    "h2,http/1.1"
+                ],
+                "disable_sni": false,
+                "enabled": true,
+                "insecure": true,
+                "server_name": "ieee.org"
+            },
+            "type": "http",
+            "username": "XWYvRVwmMgwTMhB2LVwAkWAW"
+        },
+
+
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "❇️ SizConncetix"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "network": "tcp",
+        "port": 853,
+        "action": "reject",
+        "method": "default"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "action": "reject",
+        "method": "default"
+      },
+      
+      {
+        "inbound": "tun-in",
+        "action": "resolve"
+      },
+      
+      {
+        "ip_cidr": "10.10.34.0/24",
+        "outbound": "❇️ SizConncetix"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "direct"
+      }
+    ],
+    "rule_set": [
+      
+    ],
+    "final": "❇️ SizConncetix",
+    "auto_detect_interface": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true
+    }
+  }
+}
