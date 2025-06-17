@@ -252,39 +252,39 @@
       "tag": "direct"
     },
     {
-      "type": "vless",
-      "tag": "vless-vip-73666",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
-      "flow": "",
-      "tls": {
-        "enabled": false
-      },
-      "transport": {
-        "type": "tcp",
-        "headers": {
-          "Host": "fast.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-vip-81374",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
-      "flow": "",
-      "tls": {
-        "enabled": false
-      },
-      "transport": {
-        "type": "tcp",
-        "headers": {
-          "Host": "fast.com"
-        }
-      }
+  "type": "vless",
+  "tag": "vless-vip-73666",
+  "server": "keyacc.letgetway.ir",
+  "server_port": 45806,
+  "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
+  "flow": "",
+  "tls": {
+    "enabled": false
+  },
+  "transport": {
+    "type": "tcp",
+    "headers": {
+      "Host": "fast.com"
     }
+  }
+},
+{
+  "type": "vless",
+  "tag": "vless-vip-81374",
+  "server": "keyacc.letgetway.ir",
+  "server_port": 45806,
+  "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+  "flow": "",
+  "tls": {
+    "enabled": false
+  },
+  "transport": {
+    "type": "tcp",
+    "headers": {
+      "Host": "fast.com"
+    }
+  }
+}
   ],
   "route": {
     "rules": [
