@@ -1,4 +1,4 @@
-{
+ {
   "log": {
     "disabled": true,
     "level": "panic"
@@ -7,9 +7,9 @@
     "servers": [
       {
         "tag": "Internet-dns",
-        "address": "tcp://1.1.1.1",
+        "address": "tcp://8.8.8.8",
         "strategy": "ipv4_only",
-        "detour": "direct"
+        "detour": "Internet"
       },
       {
         "tag": "direct-dns",
@@ -76,9 +76,7 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "VLESS-1-vip-73666",
-        "VLESS-2-vip-81374"
+        "🇺🇲 - SizConncetix ❇️"
       ]
     },
     {
@@ -95,9 +93,7 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "VLESS-1-vip-73666",
-        "VLESS-2-vip-81374"
+        "🇺🇲 - SizConncetix ❇️"
       ],
       "url": "http://1.1.1.1/",
       "interval": "3m0s",
@@ -117,43 +113,134 @@
         "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
       }
     },
-    // سایر اوت‌باندهای HTTP موجود...
-    
-    // اوت‌باندهای VLESS جدید
     {
-      "type": "vless",
-      "tag": "VLESS-1-vip-73666",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
-      "flow": "",
-      "tls": {
-        "enabled": false,
-        "insecure": false
-      },
-      "transport": {
-        "type": "tcp",
-        "headers": {
-          "Host": "fast.com"
-        }
+      "type": "http",
+      "tag": "🇧🇪 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-be.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
       }
     },
     {
-      "type": "vless",
-      "tag": "VLESS-2-vip-81374",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
-      "flow": "",
-      "tls": {
-        "enabled": false,
-        "insecure": false
-      },
-      "transport": {
-        "type": "tcp",
-        "headers": {
-          "Host": "fast.com"
-        }
+      "type": "http",
+      "tag": "🇬🇧 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-uk.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇩🇪 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-de.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇳🇴 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-no.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇹🇷 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-tr.pointtoserver.com",
+      "server_port": 10799,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇫🇮 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-fi.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇸🇪 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-se.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇮🇹 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-it.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇫🇷 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-fr.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "http",
+      "tag": "🇺🇲 - SizConncetix ❇️",
+      "domain_strategy": "ipv4_only",
+      "server": "prox-us.pointtoserver.com",
+      "server_port": 10780,
+      "username": "purevpn0s14356271",
+      "password": "IUjWlr0gAPZSMc",
+      "headers": {
+        "host": "ieee.org",
+        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
       }
     },
     {
