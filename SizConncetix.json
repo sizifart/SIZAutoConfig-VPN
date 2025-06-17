@@ -1,4 +1,4 @@
- {
+{
   "log": {
     "disabled": true,
     "level": "panic"
@@ -66,34 +66,38 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "🇷🇺 - SizConncetix ❇️",
-        "🇧🇪 - SizConncetix ❇️",
-        "🇬🇧 - SizConncetix ❇️",
-        "🇩🇪 - SizConncetix ❇️",
-        "🇳🇴 - SizConncetix ❇️",
-        "🇹🇷 - SizConncetix ❇️",
-        "🇫🇮 - SizConncetix ❇️",
-        "🇸🇪 - SizConncetix ❇️",
-        "🇮🇹 - SizConncetix ❇️",
-        "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️"
+        "\ud83c\uddf7\ud83c\uddfa - SizConncetix \u2747\ufe0f",
+        "\ud83c\udde7\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddec\ud83c\udde7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\udde9\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf3\ud83c\uddf4 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf9\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddeb\ud83c\uddee - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf8\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddee\ud83c\uddf9 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddeb\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddfa\ud83c\uddf2 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddee\ud83c\uddf7 - VLESS vip-73666",
+        "\ud83c\uddee\ud83c\uddf7 - VLESS vip-81374"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "🇷🇺 - SizConncetix ❇️",
-        "🇧🇪 - SizConncetix ❇️",
-        "🇬🇧 - SizConncetix ❇️",
-        "🇩🇪 - SizConncetix ❇️",
-        "🇳🇴 - SizConncetix ❇️",
-        "🇹🇷 - SizConncetix ❇️",
-        "🇫🇮 - SizConncetix ❇️",
-        "🇸🇪 - SizConncetix ❇️",
-        "🇮🇹 - SizConncetix ❇️",
-        "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️"
+        "\ud83c\uddf7\ud83c\uddfa - SizConncetix \u2747\ufe0f",
+        "\ud83c\udde7\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddec\ud83c\udde7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\udde9\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf3\ud83c\uddf4 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf9\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddeb\ud83c\uddee - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddf8\ud83c\uddea - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddee\ud83c\uddf9 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddeb\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddfa\ud83c\uddf2 - SizConncetix \u2747\ufe0f",
+        "\ud83c\uddee\ud83c\uddf7 - VLESS vip-73666",
+        "\ud83c\uddee\ud83c\uddf7 - VLESS vip-81374"
       ],
       "url": "http://1.1.1.1/",
       "interval": "3m0s",
@@ -102,7 +106,7 @@
     },
     {
       "type": "http",
-      "tag": "🇷🇺 - SizConncetix ❇️",
+      "tag": "\ud83c\uddf7\ud83c\uddfa - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-ru.pointtoserver.com",
       "server_port": 10780,
@@ -115,7 +119,7 @@
     },
     {
       "type": "http",
-      "tag": "🇧🇪 - SizConncetix ❇️",
+      "tag": "\ud83c\udde7\ud83c\uddea - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-be.pointtoserver.com",
       "server_port": 10780,
@@ -128,7 +132,7 @@
     },
     {
       "type": "http",
-      "tag": "🇬🇧 - SizConncetix ❇️",
+      "tag": "\ud83c\uddec\ud83c\udde7 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-uk.pointtoserver.com",
       "server_port": 10780,
@@ -141,7 +145,7 @@
     },
     {
       "type": "http",
-      "tag": "🇩🇪 - SizConncetix ❇️",
+      "tag": "\ud83c\udde9\ud83c\uddea - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-de.pointtoserver.com",
       "server_port": 10780,
@@ -154,7 +158,7 @@
     },
     {
       "type": "http",
-      "tag": "🇳🇴 - SizConncetix ❇️",
+      "tag": "\ud83c\uddf3\ud83c\uddf4 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-no.pointtoserver.com",
       "server_port": 10780,
@@ -167,7 +171,7 @@
     },
     {
       "type": "http",
-      "tag": "🇹🇷 - SizConncetix ❇️",
+      "tag": "\ud83c\uddf9\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-tr.pointtoserver.com",
       "server_port": 10799,
@@ -180,7 +184,7 @@
     },
     {
       "type": "http",
-      "tag": "🇫🇮 - SizConncetix ❇️",
+      "tag": "\ud83c\uddeb\ud83c\uddee - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-fi.pointtoserver.com",
       "server_port": 10780,
@@ -193,7 +197,7 @@
     },
     {
       "type": "http",
-      "tag": "🇸🇪 - SizConncetix ❇️",
+      "tag": "\ud83c\uddf8\ud83c\uddea - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-se.pointtoserver.com",
       "server_port": 10780,
@@ -206,7 +210,7 @@
     },
     {
       "type": "http",
-      "tag": "🇮🇹 - SizConncetix ❇️",
+      "tag": "\ud83c\uddee\ud83c\uddf9 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-it.pointtoserver.com",
       "server_port": 10780,
@@ -219,7 +223,7 @@
     },
     {
       "type": "http",
-      "tag": "🇫🇷 - SizConncetix ❇️",
+      "tag": "\ud83c\uddeb\ud83c\uddf7 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-fr.pointtoserver.com",
       "server_port": 10780,
@@ -232,7 +236,7 @@
     },
     {
       "type": "http",
-      "tag": "🇺🇲 - SizConncetix ❇️",
+      "tag": "\ud83c\uddfa\ud83c\uddf2 - SizConncetix \u2747\ufe0f",
       "domain_strategy": "ipv4_only",
       "server": "prox-us.pointtoserver.com",
       "server_port": 10780,
@@ -246,6 +250,60 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddee\ud83c\uddf7 - VLESS vip-73666",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
+      "flow": "",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "tcp",
+        "header": {
+          "type": "http",
+          "request": {
+            "path": [
+              "/"
+            ],
+            "headers": {
+              "Host": [
+                "fast.com"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "\ud83c\uddee\ud83c\uddf7 - VLESS vip-81374",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+      "flow": "",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "tcp",
+        "header": {
+          "type": "http",
+          "request": {
+            "path": [
+              "/"
+            ],
+            "headers": {
+              "Host": [
+                "fast.com"
+              ]
+            }
+          }
+        }
+      }
     }
   ],
   "route": {
@@ -429,7 +487,7 @@
       "store_fakeip": true
     },
     "clash_api": {
-      "default_mode": "✨SizConncetix✨"
+      "default_mode": "\u2728SizConncetix\u2728"
     }
   }
 }
