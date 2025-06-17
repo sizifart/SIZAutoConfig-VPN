@@ -6,7 +6,6 @@
 //profile-update-interval: 6  
 //support-url: https://t.me/SIZVPN_app  
 //profile-web-page-url: https://t.me/SIZVPN_app  
-
 {
   "log": {
     "level": "warn",
@@ -17,12 +16,12 @@
         {
         "tag": "default",
         "address": "tls://8.8.8.8",
-        "detour": "SizConncetix"
+        "detour": "❕SizSelection 1"
       },
       {
         "tag": "local",
         "address": "https://1.1.1.1/dns-query",
-        "detour": "SizConncetix"
+        "detour": "❕SizSelection 2"
       }
     
     ],
@@ -103,36 +102,36 @@
   "outbounds": [
 {
         "type": "selector",
-        "tag": "❕SizSelection 1",
+        "tag": "📡 SizConnection 1",
         "outbounds": [
-          "SizConncetix",
-          "SizConncetix"
+          "❕SizSelection 2",
+          "❕SizSelection 2"
         
         
         ],
-        "default": "SizConncetix",
+        "default": "❕SizSelection 2",
         "interrupt_exist_connections": true
       },
 
    {
         "type": "selector",
-        "tag": "❕SizSelection 2",
+        "tag": "📡 SizConnection 2",
         "outbounds": [
-          "SizConncetix",
-          "SizConncetix"
+          "❕SizSelection 2",
+          "❕SizSelection 2"
         
         
         ],
-        "default": "SizConncetix",
+        "default": "❕SizSelection 2",
         "interrupt_exist_connections": true
       },
  {
-            "tag": "SizConncetix",
+            "tag": "❕SizSelection 1",
             "type": "selector",
             "interrupt_exist_connections": true,
            
             "outbounds": [
-                "SizConncetix",
+                "❕SizSelection 2",
                 "🇨🇦 - SizConncetix ❇️",
                 "🇨🇾 - SizConncetix ❇️",
                 "🇬🇪 - SizConncetix ❇️",
@@ -149,7 +148,7 @@
         },
 
         {
-            "tag": "SizConncetix",
+            "tag": "❕SizSelection 2",
             "type": "urltest",
             "url": "http://cp.cloudflare.com",
             "interval": "10m0s",
@@ -587,7 +586,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "SizConncetix"
+        "outbound": "❕SizSelection 1"
       },
       {
         "clash_mode": "Direct",
@@ -613,7 +612,7 @@
       
       {
         "ip_cidr": "10.10.34.0/24",
-        "outbound": "SizConncetix"
+        "outbound": "❕SizSelection 1"
       },
       {
         "ip_is_private": true,
@@ -623,7 +622,7 @@
     "rule_set": [
       
     ],
-    "final": "SizConncetix",
+    "final": "❕SizSelection 1",
     "auto_detect_interface": true
   },
   "experimental": {
