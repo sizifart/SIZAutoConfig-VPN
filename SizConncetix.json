@@ -77,8 +77,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "VLESS-73666",
-        "VLESS-81374"
+        "vless-vip-73666",
+        "vless-vip-81374"
       ]
     },
     {
@@ -96,8 +96,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "VLESS-73666",
-        "VLESS-81374"
+        "vless-vip-73666",
+        "vless-vip-81374"
       ],
       "url": "http://1.1.1.1/",
       "interval": "3m0s",
@@ -248,8 +248,12 @@
       }
     },
     {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
       "type": "vless",
-      "tag": "VLESS-73666",
+      "tag": "vless-vip-73666",
       "server": "keyacc.letgetway.ir",
       "server_port": 45806,
       "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
@@ -261,13 +265,12 @@
         "type": "tcp",
         "headers": {
           "Host": "fast.com"
-        },
-        "path": "/"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "VLESS-81374",
+      "tag": "vless-vip-81374",
       "server": "keyacc.letgetway.ir",
       "server_port": 45806,
       "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
@@ -279,13 +282,8 @@
         "type": "tcp",
         "headers": {
           "Host": "fast.com"
-        },
-        "path": "/"
+        }
       }
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
     }
   ],
   "route": {
