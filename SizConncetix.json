@@ -259,12 +259,15 @@
   "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
   "flow": "",
   "tls": {
-    "enabled": false
+    "enabled": false,
+    "insecure": true,
+    "server_name": "fast.com"
   },
   "transport": {
-    "type": "tcp",
+    "type": "http",
+    "path": "/",
     "headers": {
-      "Host": "fast.com"
+      "Host": ["fast.com"]
     }
   }
 },
@@ -276,12 +279,15 @@
   "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
   "flow": "",
   "tls": {
-    "enabled": false
+    "enabled": false,
+    "insecure": true,
+    "server_name": "fast.com"
   },
   "transport": {
-    "type": "tcp",
+    "type": "http",
+    "path": "/",
     "headers": {
-      "Host": "fast.com"
+      "Host": ["fast.com"]
     }
   }
 }
