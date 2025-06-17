@@ -7,9 +7,9 @@
     "servers": [
       {
         "tag": "Internet-dns",
-        "address": "tcp://8.8.8.8",
+        "address": "tcp://1.1.1.1",
         "strategy": "ipv4_only",
-        "detour": "Internet"
+        "detour": "direct"
       },
       {
         "tag": "direct-dns",
