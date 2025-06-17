@@ -262,7 +262,7 @@
         "enabled": false
       },
       "transport": {
-        "type": "tcp",
+        "type": "http",
         "headers": {
           "Host": "fast.com"
         }
@@ -279,7 +279,7 @@
         "enabled": false
       },
       "transport": {
-        "type": "tcp",
+        "type": "http",
         "headers": {
           "Host": "fast.com"
         }
