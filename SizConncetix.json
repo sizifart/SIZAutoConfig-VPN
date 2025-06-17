@@ -76,7 +76,9 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️"
+        "🇺🇲 - SizConncetix ❇️",
+        "VLESS-73666",
+        "VLESS-81374"
       ]
     },
     {
@@ -93,7 +95,9 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️"
+        "🇺🇲 - SizConncetix ❇️",
+        "VLESS-73666",
+        "VLESS-81374"
       ],
       "url": "http://1.1.1.1/",
       "interval": "3m0s",
@@ -241,6 +245,42 @@
       "headers": {
         "host": "ieee.org",
         "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "VLESS-73666",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
+      "flow": "",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "tcp",
+        "headers": {
+          "Host": "fast.com"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "VLESS-81374",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+      "flow": "",
+      "tls": {
+        "enabled": false
+      },
+      "transport": {
+        "type": "tcp",
+        "headers": {
+          "Host": "fast.com"
+        },
+        "path": "/"
       }
     },
     {
