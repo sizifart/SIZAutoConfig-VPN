@@ -1,0 +1,93 @@
+{
+  "dns": {
+    "independent_cache": true,
+    "rules": [
+      {
+        "outbound": "any",
+        "server": "dns-direct"
+      },
+      {
+        "domain": [
+          "keyacc.letgetway.ir"
+        ],
+        "domain_keyword": [],
+        "domain_regex": [],
+        "domain_suffix": [],
+        "geosite": [],
+        "server": "dns-direct"
+      }
+    ],
+    "servers": [
+      {
+        "address": "https://doh.pub/dns-query",
+        "address_resolver": "dns-local",
+        "detour": "direct",
+        "strategy": "",
+        "tag": "dns-direct"
+      },
+      {
+        "address": "local",
+        "detour": "direct",
+        "tag": "dns-local"
+      }
+    ]
+  },
+  "inbounds": [],
+  "log": {
+    "level": "info"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "proxy-1",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+      "transport": {
+        "type": "http",
+        "method": "GET",
+        "path": "/",
+        "headers": {
+          "Host": [
+            "fast.com"
+          ]
+        }
+      },
+      "flow": "",
+      "packet_encoding": "",
+      "domain_strategy": ""
+    },
+    {
+      "type": "vless",
+      "tag": "proxy-2",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
+      "transport": {
+        "type": "http",
+        "method": "GET",
+        "path": "/",
+        "headers": {
+          "Host": [
+            "fast.com"
+          ]
+        }
+      },
+      "flow": "",
+      "packet_encoding": "",
+      "domain_strategy": ""
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "bypass",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    }
+  ]
+}
