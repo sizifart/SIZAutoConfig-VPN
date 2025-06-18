@@ -1,469 +1,114 @@
 {
-  "log": {
-    "disabled": true,
-    "level": "panic"
-  },
-  "dns": {
-    "servers": [
-      {
-        "tag": "Internet-dns",
-        "address": "tcp://8.8.8.8",
-        "strategy": "ipv4_only",
-        "detour": "Internet"
-      },
-      {
-        "tag": "direct-dns",
-        "address": "tcp://8.8.8.8",
-        "strategy": "ipv4_only",
-        "detour": "direct"
-      }
-    ],
-    "rules": [
-      {
-        "network": "udp",
-        "port": 443,
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "outbound": "any",
-        "server": "direct-dns",
-        "rewrite_ttl": 20
-      },
-      {
-        "domain_suffix": [
-          ".ir",
-          ".xn--mgba3a4fra",
-          ".xn--mgba3a4f16a"
-        ],
-        "server": "direct-dns",
-        "rewrite_ttl": 20
-      }
-    ],
-    "strategy": "ipv4_only",
-    "independent_cache": true
-  },
-  "inbounds": [
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "interface_name": "SizConncetix",
-      "mtu": 9000,
-      "address": "172.18.0.1/30",
-      "auto_route": true,
-      "strict_route": true,
-      "route_exclude_address": [
-        "192.168.0.0/16",
-        "fc00::/7"
-      ],
-      "stack": "mixed",
-      "domain_strategy": "ipv4_only"
-    }
-  ],
-  "outbounds": [
-    {
-      "type": "selector",
-      "tag": "Internet",
-      "outbounds": [
-        "Best Latency",
-        "🇷🇺 - SizConncetix ❇️",
-        "🇧🇪 - SizConncetix ❇️",
-        "🇬🇧 - SizConncetix ❇️",
-        "🇩🇪 - SizConncetix ❇️",
-        "🇳🇴 - SizConncetix ❇️",
-        "🇹🇷 - SizConncetix ❇️",
-        "🇫🇮 - SizConncetix ❇️",
-        "🇸🇪 - SizConncetix ❇️",
-        "🇮🇹 - SizConncetix ❇️",
-        "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "VLESS-1",
-        "VLESS-2"
-      ]
-    },
-    {
-      "type": "urltest",
-      "tag": "Best Latency",
-      "outbounds": [
-        "🇷🇺 - SizConncetix ❇️",
-        "🇧🇪 - SizConncetix ❇️",
-        "🇬🇧 - SizConncetix ❇️",
-        "🇩🇪 - SizConncetix ❇️",
-        "🇳🇴 - SizConncetix ❇️",
-        "🇹🇷 - SizConncetix ❇️",
-        "🇫🇮 - SizConncetix ❇️",
-        "🇸🇪 - SizConncetix ❇️",
-        "🇮🇹 - SizConncetix ❇️",
-        "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "VLESS-1",
-        "VLESS-2"
-      ],
-      "url": "http://1.1.1.1/",
-      "interval": "3m0s",
-      "tolerance": 3,
-      "idle_timeout": "9m0s"
-    },
-    {
-      "type": "http",
-      "tag": "🇷🇺 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-ru.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇧🇪 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-be.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇬🇧 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-uk.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇩🇪 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-de.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇳🇴 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-no.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇹🇷 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-tr.pointtoserver.com",
-      "server_port": 10799,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇫🇮 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-fi.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇸🇪 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-se.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇮🇹 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-it.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇫🇷 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-fr.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "http",
-      "tag": "🇺🇲 - SizConncetix ❇️",
-      "domain_strategy": "ipv4_only",
-      "server": "prox-us.pointtoserver.com",
-      "server_port": 10780,
-      "username": "purevpn0s14356271",
-      "password": "IUjWlr0gAPZSMc",
-      "headers": {
-        "host": "ieee.org",
-        "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
-      }
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "vless",
-      "tag": "VLESS-1",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
-      "transport": {
-        "type": "http",
-        "path": "/",
-        "method": "GET",
-        "headers": {
-          "Host": ["fast.com"]
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "VLESS-2",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
-      "transport": {
-        "type": "http",
-        "path": "/",
-        "method": "GET",
-        "headers": {
-          "Host": ["fast.com"]
-        }
-      }
-    }
-  ],
-  "route": {
-    "rules": [
-      {
-        "action": "sniff"
-      },
-      {
-        "type": "logical",
-        "mode": "or",
+    "dns": {
+        "independent_cache": true,
         "rules": [
-          {
-            "inbound": "dns-in"
-          },
-          {
-            "port": 53
-          },
-          {
-            "protocol": "dns"
-          }
+            {
+                "outbound": "any",
+                "server": "dns-direct"
+            },
+            {
+                "domain": [
+                    "keyacc.letgetway.ir"
+                ],
+                "domain_keyword": [
+                ],
+                "domain_regex": [
+                ],
+                "domain_suffix": [
+                ],
+                "geosite": [
+                ],
+                "server": "dns-direct"
+            }
         ],
-        "action": "hijack-dns"
-      },
-      {
-        "network": "tcp",
-        "port": 853,
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "network": "udp",
-        "port": [
-          443,
-          853
-        ],
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "protocol": "stun",
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "source_ip_cidr": [
-          "224.0.0.0/3",
-          "ff00::/8"
-        ],
-        "ip_cidr": [
-          "224.0.0.0/3",
-          "ff00::/8"
-        ],
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "ip_cidr": [
-          "10.10.34.34",
-          "10.10.34.35",
-          "10.10.34.36"
-        ],
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
-        "rule_set": [
-          "geosite-malware",
-          "geosite-phishing",
-          "geosite-cryptominers",
-          "geoip-malware",
-          "geoip-phishing"
-        ],
-        "action": "reject",
-        "method": "default"
-      },
-      {
-        "rule_set": [
-          "geosite-ir",
-          "geoip-ir"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "domain": [
-          "web.whatsapp.com",
-          "whatsapp.com",
-          "api.whatsapp.com",
-          "play.google.com",
-          "www.google.com",
-          "apps.apple.com",
-          "itunes.apple.com"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "domain_suffix": [
-          ".ir",
-          ".xn--mgba3a4fra",
-          ".xn--mgba3a4f16a"
-        ],
-        "outbound": "direct"
-      }
-    ],
-    "rule_set": [
-      {
-        "type": "remote",
-        "tag": "geosite-ir",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-category-ads-all",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-malware",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-phishing",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geosite-cryptominers",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-ir",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-malware",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      },
-      {
-        "type": "remote",
-        "tag": "geoip-phishing",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
-        "download_detour": "direct",
-        "update_interval": "72h0m0s"
-      }
-    ],
-    "auto_detect_interface": true,
-    "override_android_vpn": true
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "cache.db",
-      "store_fakeip": true
+        "servers": [
+            {
+                "address": "https://doh.pub/dns-query",
+                "address_resolver": "dns-local",
+                "detour": "direct",
+                "strategy": "",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "dns-local"
+            }
+        ]
     },
-    "clash_api": {
-      "default_mode": "✨SizConncetix✨"
+    "inbounds": [
+    ],
+    "log": {
+        "level": "info"
+    },
+    "outbounds": [
+        {
+            "domain_strategy": "",
+            "flow": "",
+            "packet_encoding": "",
+            "server": "keyacc.letgetway.ir",
+            "server_port": 45806,
+            "tag": "proxy",
+            "transport": {
+                "headers": {
+                    "Host": [
+                        "fast.com"
+                    ]
+                },
+                "method": "GET",
+                "path": "/",
+                "type": "http"
+            },
+            "type": "vless",
+            "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749"
+        },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": false,
+        "geoip": {
+            "path": "C:/Users/Mosbat PC/Downloads/Compressed/nekoray-4.0.1-2024-12-12-windows64/nekoray/geoip.db"
+        },
+        "geosite": {
+            "path": "C:/Users/Mosbat PC/Downloads/Compressed/nekoray-4.0.1-2024-12-12-windows64/nekoray/geosite.db"
+        },
+        "rules": [
+            {
+                "network": "udp",
+                "outbound": "block",
+                "port": [
+                    135,
+                    137,
+                    138,
+                    139,
+                    5353
+                ]
+            },
+            {
+                "ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ],
+                "outbound": "block"
+            },
+            {
+                "outbound": "block",
+                "source_ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ]
+            }
+        ]
     }
-  }
 }
