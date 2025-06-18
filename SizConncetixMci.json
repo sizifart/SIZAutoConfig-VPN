@@ -56,8 +56,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "proxy-1",
-        "proxy-2"
+        "🛡 SizNetMeli1 ❇️",
+        "🛡 SizNetMeli2 ❇️"
       ]
     },
     {
@@ -79,8 +79,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "proxy-1",
-        "proxy-2"
+        "🛡 SizNetMeli1 ❇️",
+        "🛡 SizNetMeli2 ❇️"
       ]
     },
     {
@@ -252,7 +252,7 @@
     },
     {
       "type": "vless",
-      "tag": "proxy-1",
+      "tag": "🛡 SizNetMeli1 ❇️",
       "server": "keyacc.letgetway.ir",
       "server_port": 45806,
       "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
@@ -272,7 +272,7 @@
     },
     {
       "type": "vless",
-      "tag": "proxy-2",
+      "tag": "🛡 SizNetMeli2 ❇️",
       "server": "keyacc.letgetway.ir",
       "server_port": 45806,
       "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
