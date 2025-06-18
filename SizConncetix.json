@@ -77,8 +77,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "vless-vip-73666",
-        "vless-vip-81374"
+        "VLESS-1",
+        "VLESS-2"
       ]
     },
     {
@@ -96,8 +96,8 @@
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
         "🇺🇲 - SizConncetix ❇️",
-        "vless-vip-73666",
-        "vless-vip-81374"
+        "VLESS-1",
+        "VLESS-2"
       ],
       "url": "http://1.1.1.1/",
       "interval": "3m0s",
@@ -252,45 +252,35 @@
       "tag": "direct"
     },
     {
-  "type": "vless",
-  "tag": "vless-vip-73666",
-  "server": "keyacc.letgetway.ir",
-  "server_port": 45806,
-  "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
-  "flow": "",
-  "tls": {
-    "enabled": false,
-    "insecure": true,
-    "server_name": "fast.com"
-  },
-  "transport": {
-    "type": "tcp",
-    "path": "/",
-    "headers": {
-      "Host": ["fast.com"]
+      "type": "vless",
+      "tag": "VLESS-1",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+      "transport": {
+        "type": "http",
+        "path": "/",
+        "method": "GET",
+        "headers": {
+          "Host": ["fast.com"]
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "VLESS-2",
+      "server": "keyacc.letgetway.ir",
+      "server_port": 45806,
+      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
+      "transport": {
+        "type": "http",
+        "path": "/",
+        "method": "GET",
+        "headers": {
+          "Host": ["fast.com"]
+        }
+      }
     }
-  }
-},
-{
-  "type": "vless",
-  "tag": "vless-vip-81374",
-  "server": "keyacc.letgetway.ir",
-  "server_port": 45806,
-  "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
-  "flow": "",
-  "tls": {
-    "enabled": false,
-    "insecure": true,
-    "server_name": "fast.com"
-  },
-  "transport": {
-    "type": "tcp",
-    "path": "/",
-    "headers": {
-      "Host": ["fast.com"]
-    }
-  }
-}
   ],
   "route": {
     "rules": [
