@@ -253,16 +253,16 @@
     {
       "type": "vless",
       "tag": "🛡 SizNetMeli1 ❇️",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "20b9fa15-6843-4d97-ac80-1ee7e426ebb7",
+      "server": "w4.space20562056.ir",
+      "server_port": 8443,
+      "uuid": "d7cad50e-230b-4265-871f-4fb03084b0da",
       "transport": {
-        "type": "http",
+        "type": "ws",
         "method": "GET",
         "path": "/",
         "headers": {
           "Host": [
-            "fast.com"
+            "panel.tabarestan2036.ir"
           ]
         }
       },
