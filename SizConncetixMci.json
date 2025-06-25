@@ -55,9 +55,7 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "🛡 SizNetMeli1 ❇️",
-        "🛡 SizNetMeli2 ❇️"
+        "🇺🇲 - SizConncetix ❇️"
       ]
     },
     {
@@ -78,9 +76,7 @@
         "🇸🇪 - SizConncetix ❇️",
         "🇮🇹 - SizConncetix ❇️",
         "🇫🇷 - SizConncetix ❇️",
-        "🇺🇲 - SizConncetix ❇️",
-        "🛡 SizNetMeli1 ❇️",
-        "🛡 SizNetMeli2 ❇️"
+        "🇺🇲 - SizConncetix ❇️"
       ]
     },
     {
@@ -249,46 +245,6 @@
         "host": "ieee.org",
         "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🛡 SizNetMeli1 ❇️",
-      "server": "w4.space20562056.ir",
-      "server_port": 8443,
-      "uuid": "d7cad50e-230b-4265-871f-4fb03084b0da",
-      "transport": {
-        "type": "ws",
-        "method": "GET",
-        "path": "/",
-        "headers": {
-          "Host": [
-            "panel.tabarestan2036.ir"
-          ]
-        }
-      },
-      "flow": "",
-      "packet_encoding": "",
-      "domain_strategy": ""
-    },
-    {
-      "type": "vless",
-      "tag": "🛡 SizNetMeli2 ❇️",
-      "server": "keyacc.letgetway.ir",
-      "server_port": 45806,
-      "uuid": "a3470537-020f-4e42-86ca-c2c2d7286749",
-      "transport": {
-        "type": "http",
-        "method": "GET",
-        "path": "/",
-        "headers": {
-          "Host": [
-            "fast.com"
-          ]
-        }
-      },
-      "flow": "",
-      "packet_encoding": "",
-      "domain_strategy": ""
     }
   ],
   "route": {
